@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col p-4">
+      <h1 class="mb-3">Profile Information</h1>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="name" class="form-label">Name User:</label>
+          <input disabled type="text" class="form-control" id="name" [value]="user?.name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="email" class="form-label">Email Address:</label>
+          <input disabled type="text" class="form-control" id="email" [value]="user?.email">
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col">
+          <label for="role" class="form-label">Role:</label>
+          <select class="form-select" id="role" disabled  [value]="user?.role">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+      </div>
+      <button target="_blank" routerLink="/cms" *ngIf="user?.role === 'admin'" type="button" class="btn btn-primary">Go To CMS (Content Management System)</button>
+    </div>
+    <div class="col pt-5">
+      <img class="w-100" src="./assets/images/profile.svg" alt="">
+    </div>
+  </div>

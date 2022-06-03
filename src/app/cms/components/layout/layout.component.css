@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  /* Custom */
+  position: relative;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+.content-site {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.brand-sidebar {
+  padding: 17px 20px;
+}
+
+.link-cms {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  color: #212121;
+}
+
+.link-cms.active {
+  background-color: #E0E0E0;
+}
+
+.link-cms:hover {
+  background-color: #E0E0E0;
+}

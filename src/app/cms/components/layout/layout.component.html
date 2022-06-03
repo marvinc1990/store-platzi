@@ -1,0 +1,66 @@
+<div class="content-site container-fluid h-100">
+  <div class="row flex-nowrap h-100">
+    <div class="col-auto px-0 h-100">
+      <div id="sidebar" class="section-sidebar collapse collapse-horizontal show border-end h-100">
+        <div class="flex-shrink-0 p-0 bg-light overflow-auto h-100" style="width: 250px;">
+          <a href="/"
+            class="brand-sidebar d-flex align-items-center link-primary bg-light text-decoration-none border-bottom sticky-top">
+            <span class="fs-5 fw-semibold">PlatziStore CMS</span>
+          </a>
+          <ul class="list-unstyled">
+            <li><a class="link-cms" routerLink="products" routerLinkActive="active">Products</a></li>
+            <li><a class="link-cms" routerLink="users" routerLinkActive="active">Users</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col overflow-auto">
+      <div class="row sticky-top">
+        <div class="col p-0 section-navbar">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+              <div class="navbar-brand" href="#">
+                <div class="row align-items-center g-2">
+                  <div class="col"><button type="button" class="btn btn-outline-dark" href="#" data-bs-target="#sidebar"
+                      data-bs-toggle="collapse">
+                      <i class="bi bi-arrow-left-right"></i>
+                    </button></div>
+                </div>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">
+                      <i class="bi bi-person-circle"></i>
+                      <span class="d-lg-none">Configuración de Perfil</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page">
+                      <i class="bi bi-gear-fill"></i>
+                      <span class="d-lg-none">Configuración del Sistema</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="bi bi-bell-fill"></i>
+                      <span class="d-lg-none">Notificaciones</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row p-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

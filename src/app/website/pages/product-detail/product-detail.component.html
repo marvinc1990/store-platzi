@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row py-lg-4">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light text-center">{{ product?.title }}</h1>
+      <h4 class="fw-light text-center">Price: {{ product?.price | currency: 'S/. ' }}</h4>
+      <p class="text-muted text-center">{{ product?.description }}</p>
+      <p class="text-center">
+        <a routerLink="/home" class="btn btn-secondary m-2">Back To Home</a>
+        <a class="btn btn-primary m-2" (click)="addToShoppingCart(product)">Add To Cart</a>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let img of product?.images">
+      <div class="card">
+        <img [src]="img" class="card-img-top" alt="Image Product">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<img class="card-img-top" alt="Image URL" [src]="imgInput" *ngIf="imgInput; else elseImg" (error)="eventFailed()">
+<ng-template #elseImg>
+  <img class="card-img-top" [src]="imgDefault" alt="Image Default">
+</ng-template>

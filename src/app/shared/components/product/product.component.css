@@ -1,0 +1,14 @@
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.div-btn {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
